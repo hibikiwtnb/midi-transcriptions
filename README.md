@@ -8,11 +8,15 @@ AI-assisted MIDI transcriptions, corrected and improved by human contributors.
 
 本倉庫中的 MIDI 主要由 **MuScriptor Large** 模型生成。
 
+轉錄主要在以下硬體環境中執行：**Intel Xeon Gold 6226 ×2 + NVIDIA RTX A3000**。
+
 由於模型生成的 MIDI 會固定為 **120 BPM**，我會使用 [hibikiwtnb/pianotrans-tools](https://github.com/hibikiwtnb/pianotrans-tools) 對 BPM 進行修正。修正後的 MIDI 檔名會帶有 `_bpmfix` 標記，例如：[bpmfix](https://github.com/hibikiwtnb/midi-transcriptions/blob/main/midi/CYaRon-%E5%85%83%E6%B0%97%E5%85%A8%E9%96%8BDAY%20DAY%20DAY%20Off%20Vocal_bpmfix.mid "CYaRon-元気全開DAY DAY DAY Off Vocal_bpmfix.mid")。
 
 ## Technical notes
 
 The MIDI files in this repository are primarily generated with the **MuScriptor Large** model.
+
+Transcription is primarily performed on the following hardware: **Intel Xeon Gold 6226 ×2 + NVIDIA RTX A3000**.
 
 Because the model outputs MIDI files at a fixed **120 BPM**, I use [hibikiwtnb/pianotrans-tools](https://github.com/hibikiwtnb/pianotrans-tools) to correct the BPM. Corrected MIDI files are marked with `_bpmfix` in the filename, for example: [bpmfix](https://github.com/hibikiwtnb/midi-transcriptions/blob/main/midi/CYaRon-%E5%85%83%E6%B0%97%E5%85%A8%E9%96%8BDAY%20DAY%20DAY%20Off%20Vocal_bpmfix.mid "CYaRon-元気全開DAY DAY DAY Off Vocal_bpmfix.mid").
 
