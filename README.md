@@ -1,6 +1,20 @@
 # midi-transcriptions
 
+由 AI 輔助生成的 MIDI 轉錄，並由人工進行修正與改進。
+
 AI-assisted MIDI transcriptions, corrected and improved by human contributors.
+
+## 技術介紹
+
+本倉庫中的 MIDI 主要由 **MuScriptor Large** 模型生成。
+
+由於模型生成的 MIDI 會固定為 **120 BPM**，我會使用 [hibikiwtnb/pianotrans-tools](https://github.com/hibikiwtnb/pianotrans-tools) 對 BPM 進行修正。修正後的 MIDI 檔名會帶有 `_bpmfix` 標記，例如：[bpmfix](https://github.com/hibikiwtnb/midi-transcriptions/blob/main/midi/CYaRon-%E5%85%83%E6%B0%97%E5%85%A8%E9%96%8BDAY%20DAY%20DAY%20Off%20Vocal_bpmfix.mid "CYaRon-元気全開DAY DAY DAY Off Vocal_bpmfix.mid")。
+
+## Technical notes
+
+The MIDI files in this repository are primarily generated with the **MuScriptor Large** model.
+
+Because the model outputs MIDI files at a fixed **120 BPM**, I use [hibikiwtnb/pianotrans-tools](https://github.com/hibikiwtnb/pianotrans-tools) to correct the BPM. Corrected MIDI files are marked with `_bpmfix` in the filename, for example: [bpmfix](https://github.com/hibikiwtnb/midi-transcriptions/blob/main/midi/CYaRon-%E5%85%83%E6%B0%97%E5%85%A8%E9%96%8BDAY%20DAY%20DAY%20Off%20Vocal_bpmfix.mid "CYaRon-元気全開DAY DAY DAY Off Vocal_bpmfix.mid").
 
 ## 分享與授權
 
@@ -29,7 +43,3 @@ You are **not required to publish your modifications** or submit them back to th
 Commercial use is not automatically cleared by this repository. Anyone using these MIDI files commercially is responsible for obtaining any permissions required for the underlying musical composition and other third-party rights.
 
 See [`LICENSE`](LICENSE) for details.
-
-## bpmfix
-
-Use [hibikiwtnb/pianotrans-tools](https://github.com/hibikiwtnb/pianotrans-tools).
